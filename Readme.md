@@ -1,4 +1,4 @@
-Using Selenium and Python, I have automated the Sephora's website testing for the followiing task:
+Using Selenium and Python, I have automated Sephora's website testing for the followiing task:
 
 Use Case: User should be able to see how many products appear when they search for something in the search bar.
 
@@ -13,4 +13,6 @@ Automation:
 All these steps, automated. Only thing that user has to put is the product type (lipsticks) and all the info will be automatically scraped and displayed.
 
 
+
+<img width="1470" alt="Screenshot 2024-12-19 at 6 44 13 PM" src="https://github.com/user-attachments/assets/4b161e5b-ec13-412e-94f7-78bf55735770" />
 
