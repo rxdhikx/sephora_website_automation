@@ -1,18 +1,42 @@
-Using Selenium and Python, I have automated Sephora's website testing for the followiing task:
+# **Automated Product Search and Scraping on Sephora using Selenium and Python**
 
-Use Case: User should be able to see how many products appear when they search for something in the search bar.
+## **Project Overview**
 
-Steps:
-1. User enters the site address www.sephora.com
-2. User locates the search bar on top of the webpage and searches for a product. Eg. Lipstick
-3. User enters on the lipstick search product webpage
-4. User sees a list of lipsticks sorted in default way (relevancy)
+This project automates product searches on **Sephora’s website**, scraping results based on a user-defined query (e.g., *Lipstick*). <br>
+It validates the search functionality and retrieves product details like name, price, and the number of products found on the webpage.
 
-Automation:
+## **Technologies Used**
 
-All these steps, automated. Only thing that user has to put is the product type (lipsticks) and all the info will be automatically scraped and displayed.
+- **Python**: The scripting language used to develop the automation workflow.
+- **Selenium WebDriver**: Automates browser interactions (search, data scraping) to simulate real user behavior.
+- **ChromeDriver**: A necessary component for Selenium to interface with Chrome, allowing browser interactions.
+- **WebDriverWait**: To handle dynamic page loading and ensure elements are present before interacting with them, improving script reliability.
+
+
+## **Use Case**
+As e-commerce websites like **Sephora** handle an enormous amount of product data and user interactions, ensuring that their search functionalities work as expected is crucial. This project automates the process of testing how many products appear when a user searches for a product, verifying that the search functionality returns the correct results. The automation covers the following tasks:
+
+- Navigate to **www.sephora.com**
+- Input a search query (e.g., *Lipstick*) in the search bar
+- Retrieve and display the number of products related to the search term
+- Automatically interact with search results, and scrape product data (name, price, etc.)
+
+This automated workflow can be extended for regression testing, helping QA teams and developers ensure that search functionalities are not broken during updates or deployments.
 
 
 
-<img width="1470" alt="Screenshot 2024-12-19 at 6 44 13 PM" src="https://github.com/user-attachments/assets/4b161e5b-ec13-412e-94f7-78bf55735770" />
+## **Implementation**
+
+1. **Navigate to Sephora**: Opens the homepage with `driver.get()`.
+2. **Search Bar Input**: Locates and enters a query into the search bar.
+3. **Scrape Results**: Extracts product details like name and price.
+4. **Dynamic Input**: User provides the search query before running the script.
+
+## **Test Case & Results**
+The script checks that the search results match the expected number of products, validating the search functionality.
+
+
+![image](https://github.com/user-attachments/assets/0b2ebd95-111d-46f1-ab3a-3edf253327f5)
+
+
 
